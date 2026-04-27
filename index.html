@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Preços de Carros</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 Comparador de Preços de Carros</h1>
+        <div class="subtitle">Informe os dados de 3 carros para descobrir o mais caro e o mais barato</div>
+
+        <!-- Cards para cada carro -->
+        <div class="car-card">
+            <div class="car-title">🚙 Carro 1</div>
+            <div class="input-group">
+                <label>Marca do Carro:</label>
+                <input type="text" id="marca1" placeholder="Ex: Honda, Toyota, Ford..." autocomplete="off">
+            </div>
+            <div class="input-group">
+                <label>Preço (R$):</label>
+                <input type="number" id="preco1" placeholder="Ex: 50000" step="0.01" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-title">🚗 Carro 2</div>
+            <div class="input-group">
+                <label>Marca do Carro:</label>
+                <input type="text" id="marca2" placeholder="Ex: Honda, Toyota, Ford..." autocomplete="off">
+            </div>
+            <div class="input-group">
+                <label>Preço (R$):</label>
+                <input type="number" id="preco2" placeholder="Ex: 50000" step="0.01" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-title">🚕 Carro 3</div>
+            <div class="input-group">
+                <label>Marca do Carro:</label>
+                <input type="text" id="marca3" placeholder="Ex: Honda, Toyota, Ford..." autocomplete="off">
+            </div>
+            <div class="input-group">
+                <label>Preço (R$):</label>
+                <input type="number" id="preco3" placeholder="Ex: 50000" step="0.01" autocomplete="off">
+            </div>
+        </div>
+
+        <!-- Botão para executar a comparação -->
+        <button class="compare-btn" onclick="compararCarros()">🔍 Comparar Preços</button>
+
+        <!-- Área onde serão exibidos os resultados -->
+        <div id="resultados" class="results"></div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
